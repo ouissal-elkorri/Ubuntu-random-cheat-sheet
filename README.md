@@ -8,7 +8,6 @@ In this repo I will add any command I needed while working on a project or just 
 
 Android devices usually uses the **Media Transfer Protocol (MTP)** when connecting via the USB. This protocol works **differently** than the traditional USB.
 
-1.
 ```console
 username@username-laptopname:~$ cd /run/user/1000/gvfs/
 username@username-laptopname:/run/user/1000/gvfs$ ls
@@ -20,5 +19,17 @@ username@username-laptopname:/run/user/1000/gvfs/mtp:host=OPPO_CPH1909_Z9UCWOFUF
 ```
 
 
-#ouplaaa now you can go wherever you want
+ouplaaa now you can go wherever you want
 
+---
+
+### Open a file 
+
+```console
+username@username-laptopname:~$ xdg-open fileName
+``` 
+
+
+---
+
+## Git commands
