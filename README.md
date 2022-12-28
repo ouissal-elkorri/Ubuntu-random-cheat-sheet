@@ -28,7 +28,8 @@ ouplaaa now you can go wherever you want
 ```console
 username@username-laptopname:~$ xdg-open fileName
 ``` 
-
+If it's a PDF it will be opened with the **Document Viewer** 
+If it's a normal file it will be opened with the **Text Editor**
 
 ---
 
