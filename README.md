@@ -33,4 +33,17 @@ If it's a normal file it will be opened with the **Text Editor**
 
 ---
 
+
 ## Git commands
+
+### Delete a branch remotely after a local delete
+If by any accident you wanted to delete a branch(remotely & locally) but instead of **-D <branch-name>** you wrote **-d <branch-name>**, it's okay you still don't have to complicate life and use the GUI. Follow me: 
+
+The following line will save your life
+
+```console
+username@username-laptopname:YourProjectLocation$ git push origin --delete <remote-branch-name>
+```
+
+Bingooo, check your repo
+
