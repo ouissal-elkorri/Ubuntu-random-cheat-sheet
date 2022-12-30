@@ -62,6 +62,12 @@ username@username-laptopname:MyProjectLocation$ git rebase ouissal preprod
 ---
 ## MySQL cheat sheet 
 
+**Check the status of MySQL**
+```console
+username@username-laptopname:$ sudo service mysql status
+```
+
+
 **Access the MySQL command-line interface**
 ```console
 username@username-laptopname:$ sudo mysql -u root
