@@ -135,3 +135,4 @@ mysql> SELECT authentication_string FROM mysql.user WHERE User='root';
 1 row in set (0.02 sec)
 
 ```
+Ps. you can change "root" with any other user
