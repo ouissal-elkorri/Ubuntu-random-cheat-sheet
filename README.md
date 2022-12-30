@@ -1,5 +1,5 @@
 # Ubuntu-random-cheat-sheet
-In this repo I will add any command I needed while working on a project or just wanted to simplify life 
+In this repo I will add any command I needed while working on a project or just wanted to simplify life.
 
 
 ## Some random commands to simplify my access to the files/folders I have
@@ -56,4 +56,50 @@ username@username-laptopname:MyProjectLocation$ git checkout preprod
 username@username-laptopname:MyProjectLocation$ git pull
 username@username-laptopname:MyProjectLocation$ git checkout ouissal 
 username@username-laptopname:MyProjectLocation$ git rebase ouissal preprod
+```
+
+---
+---
+## MySQL cheat sheet 
+
+**Access the MySQL command-line interface**
+```console
+username@username-laptopname:$ sudo mysql -u root
+```
+
+**Show DBs**
+```console
+mysql> SHOW DATABASES;
+```
+*Or*
+
+```console
+mysql> show databases;
+```
+
+**Describe the tables of the database**
+```console
+mysql> use database-name;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables;
++--------------+
+| Tables_in_BI |
++--------------+
+| clients      |
++--------------+
+1 row in set (0.00 sec)
+```
+
+**Verify the port number that the MySQL server is listening on**
+```console
+mysql> SHOW VARIABLES WHERE Variable_name = 'port';
++---------------+-------+
+| Variable_name | Value |
++---------------+-------+
+| port          | 3306  |
++---------------+-------+
+1 row in set (0.10 sec)
 ```
