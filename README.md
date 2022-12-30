@@ -103,3 +103,35 @@ mysql> SHOW VARIABLES WHERE Variable_name = 'port';
 +---------------+-------+
 1 row in set (0.10 sec)
 ```
+
+**Know the users and the hosts**
+```console
+mysql> SELECT User, Host FROM mysql.user;
++------------------+-----------+
+| User             | Host      |
++------------------+-----------+
+| debian-sys-maint | localhost |
+| mysql.infoschema | localhost |
+| mysql.session    | localhost |
+| mysql.sys        | localhost |
+| root             | localhost |
++------------------+-----------+
+5 rows in set (0.00 sec)
+```
+
+**Know the password of your user**
+1. In old versions of MySQL 
+```console
+mysql> SELECT Password FROM mysql.user WHERE User='root';
+```
+2. In MySQL 8.0 and later
+```console
+mysql> SELECT authentication_string FROM mysql.user WHERE User='root';
++-----------------------+
+| authentication_string |
++-----------------------+
+|    #your-password     |
++-----------------------+
+1 row in set (0.02 sec)
+
+```
