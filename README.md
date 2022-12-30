@@ -47,3 +47,12 @@ username@username-laptopname:YourProjectLocation$ git push origin --delete <remo
 
 Bingooo, check your repo
 
+### Get the changes from the preprod or master branch to your branch
+I'm working on a project with a team, each one of us pushes the changes they do to branches named after their names, for me my branch is named **ouissal**, and when anyone finishes their work they merge it to a **preprod** branch. Now I want to get the changes **from the preprod to ouissal**, here is what I did
+
+```console
+username@username-laptopname:MyProjectLocation$ git checkout preprod 
+username@username-laptopname:MyProjectLocation$ git pull
+username@username-laptopname:MyProjectLocation$ git checkout ouissal 
+username@username-laptopname:MyProjectLocation$ git rebase ouissal preprod
+```
