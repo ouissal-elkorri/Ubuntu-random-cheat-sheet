@@ -70,7 +70,12 @@ username@username-laptopname:$ sudo service mysql status
 
 **Access the MySQL command-line interface**
 ```console
-username@username-laptopname:$ sudo mysql -u root
+username@username-laptopname:$ sudo mysql -u root -p
+[sudo] password for username: 
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+....
+mysql>
 ```
 
 **Show DBs**
