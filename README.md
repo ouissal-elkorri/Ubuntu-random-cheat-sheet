@@ -58,6 +58,11 @@ username@username-laptopname:MyProjectLocation$ git checkout ouissal
 username@username-laptopname:MyProjectLocation$ git rebase ouissal preprod
 ```
 
+### Clone from a specifi branch
+```console
+username@username-laptopname:~$ git clone -b <branch-name> <remote-repo-url>
+```
+
 ---
 ---
 ## MySQL cheat sheet 
